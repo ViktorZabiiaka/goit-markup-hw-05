@@ -99,12 +99,13 @@ span.logo-link {
   display: flex;
 }
 
-.nav.list {
+.nav-list {
   display: flex;
-  margin-left: 93px;
+  padding: 0;
+  margin: 0 0 0 93px;
 }
 
-.nav.list .list + .list {
+.nav-list .list.nav + .list.nav {
   margin-left: 50px;
 }
 
@@ -241,12 +242,13 @@ span.logo-link {
   min-width: 200px;
   text-align: center;
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
-
+  cursor: pointer;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  background-color: var(--accent-color);
 }
 
 .button-hero:hover,
@@ -596,8 +598,9 @@ span.logo-link {
   height: 100%;
   left: 0;
   top: 0;
-
+  
   background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
 }
 
 .overlay-item {
@@ -617,6 +620,7 @@ span.logo-link {
 
 .portfolio-link:hover .overlay-text {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .portfolio > .list {
